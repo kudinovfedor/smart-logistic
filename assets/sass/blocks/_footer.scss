@@ -3,6 +3,23 @@
     right: 0;
     bottom: 0;
     left: 0;
+    color: $footerFontColor;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: $footerBgColor;
+
+    &-copyright {
+        padding: 19px 0;
+
+        a {
+            color: $footerFontColor;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .pre-footer {

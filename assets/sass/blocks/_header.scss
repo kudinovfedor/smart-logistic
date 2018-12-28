@@ -4,10 +4,31 @@
     color: $preHeaderColor;
 }
 
-.page-header {
-    padding: 10px 0;
-    background-color: $headerBgColor;
+.header {
+    position: static;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
     color: $headerFontColor;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 16px 0;
+    background-color: $headerBgColor;
+
+    &.is-home {
+        position: absolute;
+        background-color: transparent;
+    }
+
+    &-logo {
+        margin-right: auto;
+    }
+
+    &-phone {
+        padding: 0 15px;
+    }
 }
 
 .logo {
@@ -33,10 +54,14 @@
     }
 
     &-number {
+        color: inherit;
+        font-size: 14px;
+        line-height: 1.5;
         display: inline-block;
         text-decoration: none;
 
         &:hover {
+            color: currentColor;
             text-decoration: underline;
         }
     }
@@ -56,6 +81,9 @@
     }
 
     &-link {
+        color: inherit;
+        font-size: 14px;
+        line-height: 1.5;
         display: block;
         text-align: center;
         text-decoration: none;
@@ -79,6 +107,9 @@
     }
 
     &-link {
+        color: inherit;
+        font-size: 14px;
+        line-height: 1.5;
         display: block;
         text-align: center;
         text-decoration: none;
@@ -101,6 +132,9 @@
         margin: 0 5px;
 
         a {
+            color: inherit;
+            font-size: 14px;
+            line-height: 1.5;
             display: block;
         }
     }

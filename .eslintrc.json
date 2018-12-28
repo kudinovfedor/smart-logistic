@@ -32,7 +32,7 @@
         "no-unused-vars": "warn",
         "eol-last": "error",
         "valid-jsdoc": [
-            "error",
+            "warn",
             {
                 "prefer": {
                     "return": "returns"
@@ -52,7 +52,7 @@
             }
         ],
         "require-jsdoc": [
-            "error",
+            "warn",
             {
                 "require": {
                     "ClassDeclaration": true,

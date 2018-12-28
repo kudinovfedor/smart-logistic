@@ -2,12 +2,12 @@ $debug: false !default;
 $image-url-path: "assets/img/" !default;
 $font-url-path: "assets/fonts/" !default;
 
-$borderRadius: 0px;
-$shadow: 0 0 10px rgba(#000, .2);
+$borderRadius: 3px;
+$shadow: none;
 
 // BRAND
 $themeColorOne: #2c3e50; // header, menu, footer, title,
-$themeColorTwo: #e74c3c; // menu active item, button, footer link hover, woo
+$themeColorTwo: #ffce00; // menu active item, button, footer link hover, woo
 $themeColorThree: #3498db; // preHeader bg, wooOnSale
 $themeColorFour: #2980b9; //menu hover item, table border, preHeader font
 
@@ -24,7 +24,7 @@ $preHeaderBgColor: $themeColorThree;
 $preHeaderColor: $themeColorFour;
 
 // HEADER
-$headerBgColor: $themeColorOne;
+$headerBgColor: #242424;
 $headerFontColor: #fff;
 $headerHighlightBgColor: $themeColorTwo;
 $headerHighlightColor: #fff;
@@ -36,7 +36,7 @@ $menuFontColor: #fff;
 $menuFontColorActive: #fff;
 
 $navArrowColor: #fff;
-$navHeaderMobileBGColor: $themeColorTwo;
+$navHeaderMobileBGColor: #242424;
 $navHamburgerMobileColor: #fff;
 
 $menuMobileBGColor: $themeColorTwo;
@@ -59,7 +59,7 @@ $menuContainerMobilePaddingTop: 30%;
 // MENU END
 
 // FOOTER
-$footerBgColor: $themeColorOne;
+$footerBgColor: #242424;
 $footerFontColor: #fff;
 $footerLinkColorActive: darken($footerFontColor, 5%);
 
@@ -75,13 +75,15 @@ $linkFontColor: #000;
 $linkFontColorActive: lighten($linkFontColor, 20%);
 
 // BUTTONS
-$buttonFontColor: #fff;
-$buttonFontColorActive: #fff;
-$buttonBgColor: $themeColorTwo;
-$buttonBgColorActive: darken($buttonBgColor, 10%);
-$buttonBorderColor: $themeColorTwo;
-$buttonOutlinedFirstColor: $themeColorTwo;
-$buttonOutlinedSecondColor: #fff;
+$buttonFontColor: #242424;
+$buttonFontColorActive: #242424;
+$buttonBgColor: #ffd200;
+$buttonBgGradient: linear-gradient(to right, #ffd200 0%, #ffae00 100%);
+$buttonBgGradientActive: linear-gradient(to right, #ffae00 0%, #ffd200 100%);
+$buttonBgColorActive: darken($buttonBgColor, 5%);
+$buttonBorderColor: #ffd200;
+$buttonOutlinedFirstColor: #ffd200;
+$buttonOutlinedSecondColor: #242424;
 
 // TABLE
 $tableBgColor: $themeColorTwo;

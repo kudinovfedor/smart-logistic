@@ -16,7 +16,9 @@
         reviews(".js-reviews");
         scrollTop(".js-scroll-top");
         wrapHighlightedElements(".highlighted");
-        ajaxLoadMorePosts(".js-load-more", ".js-ajax-posts");
+        if (ajax) {
+            ajaxLoadMorePosts(".js-load-more", ".js-ajax-posts");
+        }
         stickFooter(".js-footer", ".js-container");
         anotherHamburgerMenu(".js-menu", ".js-hamburger", ".js-menu-close");
         buyOneClick(".one-click", '[data-field-id="field7"]', "h1.page-name");

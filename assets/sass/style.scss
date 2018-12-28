@@ -19,7 +19,7 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 @import "core/fonts";
 @import "core/wp-core";
 @import "core/help-style";
-//@import "core/flexbox";
+@import "core/flexbox";
 
 // PLUG-INs
 @import "plugins/font-awesome/font-awesome";
@@ -43,8 +43,8 @@ Tags: one-column, two-columns, full-width-template, e-commerce
 @import "elements/responsive-titles";
 @import "elements/scroll-top";
 @import "elements/forms";
-//@import "elements/buttons";
-@import "elements/buttons-2";
+@import "elements/buttons";
+//@import "elements/buttons-2";
 @import "elements/links";
 @import "elements/pagination";
 @import "elements/tables";
@@ -95,7 +95,7 @@ body {
     background-color: $bodyBgColor;
     color: $bodyFontColor;
     font-family: $fontFamilyTwo;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -104,7 +104,7 @@ body {
     min-height: 100%;
 
     @media #{$mobile} {
-        padding-top: 80px;
+        padding-top: 65px;
     }
 }
 
@@ -172,4 +172,40 @@ img {
 
 .is-hide {
     display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        &-copyright {
+            padding: 10px 0;
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 544px) {
+    .header {
+        padding: 5px 0;
+        text-align: center;
+
+        &-item {
+            padding: 3px 0;
+        }
+
+        &-container {
+            display: block;
+        }
+
+        &-logo {
+            display: none;
+        }
+    }
+
+    .footer {
+        &-copyright {
+            .footer-item {
+                text-align: center;
+            }
+        }
+    }
 }

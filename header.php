@@ -17,48 +17,32 @@
 <?php wp_body(); ?>
 
 <div class="wrapper">
-    <?php /*
-    <div class="pre-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <nav class="second-menu">
-                        <?php wp_nav_menu(array(
-                            'theme_location' => 'second-menu',
-                            'container' => false,
-                            'menu_class' => 'menu-container',
-                            'menu_id' => '',
-                            'fallback_cb' => 'wp_page_menu',
-                            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                            'depth' => 2
-                        )); ?>
-                    </nav>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    Some info here
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    Some info here
-                </div>
-            </div>
-        </div>
-    </div>
-    */ ?>
 
-    <header class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
-
+    <header class="header <?php echo is_front_page() ? 'is-home' : '' ?>">
+        <div class="container d-flex flex-wrap align-items-center header-container">
+            <div class="logo header-logo header-item"><?php get_default_logo_link('logo.svg'); ?></div>
+            <?php if (has_phones()) { ?>
+                <div class="header-item header-phone">
+                    <ul class="phone">
+                        <?php foreach (get_phones() as $phone) { ?>
+                            <li class="phone-item">
+                                <a href="tel:<?php echo esc_attr(get_phone_number($phone)); ?>" class="phone-number">
+                                    <?php echo esc_html($phone); ?>
+                                </a>
+                            </li>
+                        <?php } ?>
+                    </ul>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <?php get_search_form(); ?>
-                </div>
+            <?php } ?>
+            <div class="header-item header-btn">
+                <button type="button" class="button-medium <?php the_lang_class('js-callback'); ?>">
+                    <?php _e('Call back', 'brainworks'); ?>
+                </button>
             </div>
         </div>
     </header>
 
-    <?php if (has_nav_menu('main-nav')) { ?>
+    <?php if (false && has_nav_menu('main-nav')) { ?>
         <nav class="nav js-menu">
             <button type="button" tabindex="0" class="menu-item-close menu-close js-menu-close"></button>
             <?php wp_nav_menu(array(
@@ -81,5 +65,5 @@
                 <span class="hamburger-inner"></span>
             </span>
             </button>
-            <div class="logo"><?php get_default_logo_link(); ?></div>
+            <div class="logo"><?php get_default_logo_link('logo.svg'); ?></div>
         </div>
