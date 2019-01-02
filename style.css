@@ -6436,12 +6436,46 @@ img {
 .is-hide {
   display: none; }
 
+.section-headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 18px; }
+  @media (min-width: 480px) and (max-width: 1023px) {
+    .section-headline {
+      font-size: 24px;
+      font-size: calc(0.02206 * 100vw + 7.41176px); } }
+  @media (min-width: 1024px) {
+    .section-headline {
+      font-size: 30px; } }
+  .section-headline span {
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+  .section-headline::after {
+    content: '';
+    height: 4px;
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    margin-left: 15px;
+    background: url("assets/img/line.svg") no-repeat center right; }
+
 @media only screen and (max-width: 768px) {
   .footer-copyright {
     padding: 10px 0;
     font-size: 12px; } }
 
 @media only screen and (max-width: 544px) {
+  .section-headline {
+    display: block; }
+    .section-headline::after {
+      margin-left: 0;
+      margin-top: 5px; }
   .header {
     padding: 5px 0;
     text-align: center; }
