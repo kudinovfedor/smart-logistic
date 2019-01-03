@@ -278,14 +278,14 @@ if (!function_exists('bw_last_posts')) {
                                 </div>';
             }
             $output .= '<div class="custom-card-body">
-                                <h3>
+                                <h5>
                                     <a href="' . $permalink . '">' . $post['post_title'] . '</a>
-                                </h3>
+                                </h5>
                                 <p>
                                     ' . $post['post_excerpt'] . '
                                 </p>
                                 <br />
-                                <a href="' . $permalink . '" class="button-small button-inverse">
+                                <a href="' . $permalink . '" class="">
                                     ' . $atts['button_title'] . '
                                 </a>
                             </div>';
