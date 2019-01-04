@@ -361,7 +361,7 @@ if (!function_exists('bw_advert_shortcode')) {
                 );
 
                 $item = sprintf('<section id="post-%s" class="%s">%s %s %s %s</section>', get_the_ID(),
-                    join(' ', get_post_class(array('col-md-4', $basic_class . '-item'))),
+                    join(' ', get_post_class(array('col-sm-6 col-md-4', $basic_class . '-item'))),
                     $thumbnail, $headline, $excerpt, $btn
                 );
 

@@ -21,6 +21,20 @@
     <header class="header <?php echo is_front_page() ? 'is-home' : '' ?>">
         <div class="container d-flex flex-wrap align-items-center header-container">
             <div class="logo header-logo header-item"><?php get_default_logo_link('logo.svg'); ?></div>
+            <?php if (has_nav_menu('main-nav')) { ?>
+                <nav class="nav header-item header-nav js-menu">
+                    <button type="button" tabindex="0" class="menu-item-close menu-close js-menu-close"></button>
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'main-nav',
+                        'container' => false,
+                        'menu_class' => 'menu-container',
+                        'menu_id' => '',
+                        'fallback_cb' => 'wp_page_menu',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'depth' => 3
+                    )); ?>
+                </nav>
+            <?php } ?>
             <?php if (has_phones()) { ?>
                 <div class="header-item header-phone">
                     <ul class="phone">
@@ -41,21 +55,6 @@
             </div>
         </div>
     </header>
-
-    <?php if (false && has_nav_menu('main-nav')) { ?>
-        <nav class="nav js-menu">
-            <button type="button" tabindex="0" class="menu-item-close menu-close js-menu-close"></button>
-            <?php wp_nav_menu(array(
-                'theme_location' => 'main-nav',
-                'container' => false,
-                'menu_class' => 'menu-container',
-                'menu_id' => '',
-                'fallback_cb' => 'wp_page_menu',
-                'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                'depth' => 3
-            )); ?>
-        </nav>
-    <?php } ?>
 
     <div class="container js-container">
 
