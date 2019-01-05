@@ -7,7 +7,7 @@ Author URI: http://brainworks.com.ua
 Description:
 License:
 License URI:
-Version: 1.0.0
+Version: 2.0.0
 Tags: one-column, two-columns, full-width-template, e-commerce
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500,600&amp;subset=cyrillic");
@@ -5179,7 +5179,7 @@ i.button-style {
 
 @media (max-width: 544px) {
   p {
-    font-size: 14.4px;
+    font-size: 12.8px;
     line-height: 17.6px; }
 
   ul li,
@@ -5192,7 +5192,7 @@ i.button-style {
     line-height: 15.4px; } }
 @media (min-width: 545px) and (max-width: 768px) {
   p {
-    font-size: 14.4px;
+    font-size: 12.8px;
     line-height: 17.6px; }
 
   ul li,
@@ -5205,7 +5205,7 @@ i.button-style {
     line-height: 15.4px; } }
 @media (min-width: 769px) and (max-width: 1024px) {
   p {
-    font-size: 15.3px;
+    font-size: 13.6px;
     line-height: 18.7px; }
 
   ul li,
@@ -5218,7 +5218,7 @@ i.button-style {
     line-height: 17.6px; } }
 @media (min-width: 1025px) and (max-width: 1366px) {
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px; }
 
   ul li,
@@ -5231,7 +5231,7 @@ i.button-style {
     line-height: 22px; } }
 @media (min-width: 1367px) {
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px; }
 
   ul li,
@@ -6366,11 +6366,115 @@ a:hover .fa {
     .copyright a:hover {
       color: #f2f2f2; }
 
+.first-screen-headline {
+  color: #000;
+  padding: 0 15px;
+  background: #fff; }
+  .first-screen-headline .border {
+    border-bottom: 8px solid #ffce00;
+    padding-left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px; }
+
+.first-screen-headline,
+.block-svg-text,
+.third-screen-block,
+.fifth-screen-block
+.img-border-radius {
+  border-radius: 2px;
+  box-shadow: 0px 0px 27px 0px rgba(48, 48, 48, 0.2);
+  -moz-box-shadow: 0px 0px 27px 0px rgba(48, 48, 48, 0.2);
+  -webkit-box-shadow: 0px 0px 27px 0px rgba(48, 48, 48, 0.2); }
+
+.block-svg-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 22px 16px;
+  background: #fff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .block-svg-text .p-center {
+    width: 100%; }
+  .block-svg-text p {
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center; }
+
+.third-screen-block {
+  background: rgba(225, 225, 225, 0.1);
+  text-align: center;
+  padding: 35px 0 40px;
+  text-transform: uppercase; }
+  .third-screen-block:nth-child(1) {
+    margin-left: 0; }
+  .third-screen-block:nth-child(4) {
+    margin-right: 0; }
+
+.border-li {
+  padding-left: 30px; }
+  .border-li li {
+    list-style-image: url("assets/img/li.png");
+    text-transform: uppercase; }
+
+.fifth-screen-blocks {
+  width: 100%; }
+  .fifth-screen-blocks .fifth-screen-block, .fifth-screen-blocks .arrow, .fifth-screen-blocks .arrow-vertically {
+    vertical-align: top;
+    display: inline-block; }
+  .fifth-screen-blocks .fifth-screen-block {
+    text-transform: uppercase;
+    background: rgba(225, 225, 225, 0.1);
+    text-align: center;
+    padding: 35px 0 40px;
+    width: 23%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px; }
+    .fifth-screen-blocks .fifth-screen-block:nth-child(1) {
+      margin-left: 0; }
+    .fifth-screen-blocks .fifth-screen-block:nth-child(10) {
+      margin-right: 0; }
+  .fifth-screen-blocks .arrow {
+    margin: 0px -50px 0px -50px;
+    padding-top: 65px; }
+  .fifth-screen-blocks .arrow-vertically {
+    display: none; }
+
+.custom-card-body {
+  background: #fff;
+  padding: 25px 22px 20px; }
+  .custom-card-body h5 {
+    padding-bottom: 20px;
+    text-transform: uppercase; }
+  .custom-card-body a {
+    text-transform: uppercase; }
+
+@media only screen and (max-width: 914px) {
+  .fifth-screen-block {
+    width: 23%; }
+
+  .arrow {
+    margin: 0px -40px 0px -40px;
+    width: 60px; } }
+@media only screen and (max-width: 677px) {
+  .fifth-screen-blocks .fifth-screen-block {
+    width: 95%; }
+  .fifth-screen-blocks .arrow {
+    display: none; }
+  .fifth-screen-blocks .arrow-vertically {
+    display: inline-block;
+    vertical-align: top;
+    margin: -25px 49%;
+    height: 75px; } }
 ::-moz-selection {
   background-color: #ffce00;
   color: #fff;
   text-shadow: none; }
-
 ::selection {
   background-color: #ffce00;
   color: #fff;
