@@ -231,6 +231,10 @@ img {
         &-logo {
             display: none;
         }
+
+        &.is-home {
+            top: 65px;
+        }
     }
 
     .footer {

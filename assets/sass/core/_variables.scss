@@ -39,8 +39,8 @@ $navArrowColor: #fff;
 $navHeaderMobileBGColor: #242424;
 $navHamburgerMobileColor: #fff;
 
-$menuMobileBGColor: $themeColorTwo;
-$menuMobileSubMenuBGColor: lighten($themeColorTwo, 10%);
+$menuMobileBGColor: #242424;
+$menuMobileSubMenuBGColor: lighten($menuMobileBGColor, 10%);
 $menuMobileLinkFontSize: 16px;
 $menuMobileSubMenuLinkFontSize: 14px;
 $menuMobileTextColor: #fff;

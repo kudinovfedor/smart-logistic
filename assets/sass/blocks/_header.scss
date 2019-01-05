@@ -14,7 +14,7 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
-    padding: 16px 0;
+    padding: 10px 0;
     background-color: $headerBgColor;
 
     &.is-home {
@@ -28,6 +28,10 @@
 
     &-phone {
         padding: 0 15px;
+    }
+
+    &-item {
+        padding: 3px 0;
     }
 }
 
