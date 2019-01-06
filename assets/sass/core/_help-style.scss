@@ -84,6 +84,7 @@
     display: none !important;
 }
 
+
 .list-unstyled {
     padding-left: 0;
     list-style: none;
@@ -121,6 +122,24 @@
 
     .hide-on-desktop {
         display: block !important;
+    }
+    
+    .center-on-mobile {
+        text-align: center !important;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+//sm 545 - 768
+@media #{$tablet} {
+    .center-on-mobile {
+        text-align: center !important;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 

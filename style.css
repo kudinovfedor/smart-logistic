@@ -349,7 +349,19 @@ a img.aligncenter {
     display: none !important; }
 
   .hide-on-desktop {
-    display: block !important; } }
+    display: block !important; }
+
+  .center-on-mobile {
+    text-align: center !important;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; } }
+@media (min-width: 545px) and (max-width: 768px) {
+  .center-on-mobile {
+    text-align: center !important;
+    display: block;
+    margin-right: auto;
+    margin-left: auto; } }
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5962,10 +5974,10 @@ a:hover .fa {
     background-color: transparent; }
   .header-logo {
     margin-right: auto; }
-  .header-phone {
-    padding: 0 15px; }
   .header-item {
     padding: 3px 0; }
+  .header-phone {
+    padding: 0 15px; }
 
 .logo, .logo-link, .logo-img {
   display: inline-block;
