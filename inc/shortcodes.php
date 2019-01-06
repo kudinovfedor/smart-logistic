@@ -356,21 +356,21 @@ if (!function_exists('bw_advert_shortcode')) {
 
                 $excerpt = sprintf('<div class="%s-excerpt">%s</div>', $basic_class, get_the_excerpt());
 
-                $btn = sprintf('<div class="text-right"><a class="button-small %s-link" href="%s">%s</a></div>',
+                $btn = sprintf('<div class="text-left"><a class="button-small %s-link" href="%s">%s</a></div>',
                     $basic_class, get_the_permalink(), __('Continue reading', 'brainworks')
                 );
 
-                $item = sprintf('<section id="post-%s" class="%s">%s %s %s %s</section>', get_the_ID(),
-                    join(' ', get_post_class(array('col-sm-6 col-md-4', $basic_class . '-item'))),
-                    $thumbnail, $headline, $excerpt, $btn
-                );
+                $item = sprintf('<section id="post-%s" class="%s"><div class="%s-box">%s <div class="inner">%s %s %s</div></div></section>', get_the_ID(),
+join(' ', get_post_class(array('col-sm-6 col-md-4', $basic_class . '-item'))),
+$basic_class, $thumbnail, $headline, $excerpt, $btn
+);
 
                 $items .= $item;
             }
 
             wp_reset_postdata();
 
-            $output = sprintf('<div class="container"><div class="row %s-list">%s</div>', $basic_class, $items);
+            $output = sprintf('<div class="row %s-list">%s</div>', $basic_class, $items);
         }
 
         return $output;

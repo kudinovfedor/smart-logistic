@@ -181,6 +181,7 @@ img {
     font-weight: 600;
     line-height: 1.2;
     @include responsive-font-size(18px, 30px, 480px, 1024px, 24px);
+    width: 100%;
 
     span {
         flex-shrink: 0;
