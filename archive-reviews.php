@@ -3,8 +3,8 @@
 <div class="sp-xs-2 sp-md-3"></div>
 
 <div class="row">
-    <div class="col-xs-12 col-md-9">
-        <h1 class="text-center"><?php post_type_archive_title(); ?></h1>
+    <div class="col-xs-12 col-md-8">
+        <h1 class="text-center">Отзывы</h1>
 
         <div class="sp-xs-2 sp-md-3"></div>
 
@@ -84,7 +84,15 @@
             get_template_part('loops/content', 'none');
         } ?>
     </div>
-    <div class="col-xs-12 col-md-3"><?php get_sidebar(); ?></div>
+    <div class="col-xs-12 col-md-4">
+    
+    <div class="sp-xs-3"></div>
+    
+    <?php
+if (function_exists("add_formcraft_form")) {
+add_formcraft_form("[fc id='5'][/fc]");
+}
+?></div>
 </div>
 
 <?php get_footer(); ?>

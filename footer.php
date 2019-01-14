@@ -19,7 +19,7 @@
                 </div>
                 <div class="footer-item col-sm-6 text-right">
                     <?php _e('Developed by', 'brainworks') ?>
-                    <a href="https://brainworks.com.ua" target="_blank" rel="noopener">Brain Works</a>
+                    <a href="https://brainworks.pro" target="_blank" rel="noopener">Brain Works</a>
                 </div>
             </div>
         </div>

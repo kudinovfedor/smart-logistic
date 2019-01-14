@@ -198,6 +198,10 @@ img {
     }
 }
 
+.nav {
+        display: none;
+    }
+
 @media only screen and (max-width: 768px) {
     .footer {
         &-copyright {
@@ -244,5 +248,9 @@ img {
                 text-align: center;
             }
         }
+    }
+    
+    .nav {
+        display: block;
     }
 }

@@ -6693,6 +6693,9 @@ img {
     margin-left: 15px;
     background: url("assets/img/line.svg") no-repeat center right; }
 
+.nav {
+  display: none; }
+
 @media only screen and (max-width: 768px) {
   .footer-copyright {
     padding: 10px 0;
@@ -6717,6 +6720,9 @@ img {
       top: 65px; }
 
   .footer-copyright .footer-item {
-    text-align: center; } }
+    text-align: center; }
+
+  .nav {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */
